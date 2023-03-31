@@ -1,0 +1,208 @@
+
+ {"First":
+  
+  [
+    {
+      "name": "AEC",
+      "type":"folder",
+      "AEC": [
+        {
+          "name": "Assignment",
+          "type":"folder",
+          "AECAssignment":[{
+            "name":"Assignment2",
+            "type":"file",
+            "data":[1,2,3]
+          },{
+            "name":"Assignment3",
+            "type":"file",
+            "data":[1,2,3]
+          },{
+            "name":"Assignment4",
+            "type":"file",
+            "data":[1,2,3]
+          },{
+            "name":"Assignment5",
+            "type":"file",
+            "data":[1,2,3]
+          },{
+            "name":"Assignment6",
+            "type":"file",
+            "data":[1,2,3]
+          }]
+        },
+        
+        {
+          "name": "BOOK",
+          "type":"folder",
+          "AECBOOK": [{
+            "mimeType": "application/pdf",
+            "id": "1oXEgPn_zCltfGo0hQB866cAeGtcNLPEv",
+            "name": "AdvancedJava2Notes.pdf"
+          },
+          {
+            
+            "mimeType": "application/pdf",
+            "id": "1tIzs-DoyZDD49YhXAo6huN2jxx92BAQQ",
+            "name": "ch15advjava.pdf"
+          },
+          {
+            
+            "mimeType": "application/pdf",
+            "id": "16eosZkMpP22rRku_EF_IDaTo4lYMMFGn",
+            "name": "Ch14_java.pdf"
+          },
+          {
+            
+            "mimeType": "application/pdf",
+            "id": "1fPpvpgq_XkNm3MD1er6Q9p_bAc5PPM4V",
+            "name": "Ch13Java.pdf"
+          },
+          {
+            
+            "mimeType": "application/pdf",
+            "id": "1o6MOpWymZ5vbvoVhOIyCRiONqoIqBW4K",
+            "name": "Ch12psJava.pdf"
+          },
+          {
+            
+            "mimeType": "application/pdf",
+            "id": "1iJpicc-2MDEkRBf9OgBScqIrzXMH4GAq",
+            "name": "JavaChapter11AbstractClasses.pdf"
+          },
+          {
+            
+            "mimeType": "application/pdf",
+            "id": "1l6TKPAJmHZKVL1FEv3QuNJlQ8I_-6nki",
+            "name": "Chapter9_2.pdf"
+          },
+          {
+            
+            "mimeType": "application/pdf",
+            "id": "1xyKelF_zgpSRdWrZwPUbq_bqNXYKmt5w",
+            "name": "Chapter11PS.pdf"
+          },
+          {
+            
+            "mimeType": "application/pdf",
+            "id": "1n_SPA2QD7aOqYjcyUtx4faP_6cSAIU8e",
+            "name": "JavaChapter10.pdf"
+          },
+          {
+            
+            "mimeType": "application/pdf",
+            "id": "1jRKnM-LFy-He3XEoEkkNx9A_s6C0auE4",
+            "name": "Chapter9.pdf"
+          },
+          {
+            
+            "mimeType": "application/pdf",
+            "id": "1wLy52fWIWNfLHAnpNRFmuryTbeg7pFrg",
+            "name": "Ch8.pdf"
+          },
+          {
+            
+            "mimeType": "application/pdf",
+            "id": "1XR5jN5ftBEVzuDgxz_PlKGxb9FSuEGKH",
+            "name": "Ch7.pdf"
+          },
+          {
+            
+            "mimeType": "application/pdf",
+            "id": "1V8tegnaGKxcQamibAJ3gCc6fxFG3sioo",
+            "name": "Chapter_6_Arrays.pdf"
+          },
+          {
+            
+            "mimeType": "application/pdf",
+            "id": "1khNSjYC9cFxnt6vjht4_HE95FmVtnrQB",
+            "name": "Chapter_5.pdf"
+          },
+          {
+            
+            "mimeType": "application/pdf",
+            "id": "1z2CAibxWOVl5NoZ-S6S-BrmEgtCzvySc",
+            "name": "ch4conditional.pdf"
+          },
+          {
+            
+            "mimeType": "application/pdf",
+            "id": "1P1-BWmnLNk0x2FG8wyo0dNC7T9ln2HMA",
+            "name": "Ch3Strings.pdf"
+          },
+          {
+            
+            "mimeType": "application/pdf",
+            "id": "1dE2YecV_QP0lnZ9DnJcH3xo6YPM4XBxY",
+            "name": "Chapter2.pdf"
+          },
+          {
+            
+            "mimeType": "application/pdf",
+            "id": "1TbzuQG1GzWLycPvVpwZoVxFR7-DeLnEx",
+            "name": "JavaChapter1.pdf"
+          },
+          {
+            
+            "mimeType": "application/pdf",
+            "id": "1CTXUSuM9vwer1vc6Sz-r-8in_AzI2sBl",
+            "name": "IntroToJava.pdf"
+          }]
+        },{
+          "name": "LAB",
+          "type":"folder",
+          "AECLAB": [11.12,13,14]
+        },{
+          "name": "Theory",
+          "type":"folder",
+          "AECTheory": [15]
+        }
+      ]
+    },{
+      "name": "BEE",
+      "type":"folder",
+      "BEE": [
+        {
+          "name": "Assignment",
+          "type":"folder",
+          "BEEAssignment": [16,17,18]
+        },{
+          "name": "BOOK",
+          "type":"folder",
+          "BEEBOOK": [{
+            "name":"Beebook1",
+            "type":"file",
+            "data":[1,2,3]
+          },{
+            "name":"Beebook1",
+            "type":"file",
+            "data":[1,2,3]
+          },{
+            "name":"Beebook1",
+            "type":"file",
+            "data":[1,2,3]
+          },{
+            "name":"Beebook1",
+            "type":"file",
+            "data":[1,2,3]
+          },{
+            "name":"Beebook1",
+            "type":"file",
+            "data":[1,2,3]
+          }]
+        },{
+          "name": "LAB",
+          "type":"folder",
+          "BEELAB": [20]
+        },{
+          "name": "Theory",
+          "sub": [21],
+          "Theory":"folder"
+        }
+      ]
+    }
+    
+    
+    
+  ]
+ }
