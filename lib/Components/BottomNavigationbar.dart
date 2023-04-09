@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 Widget CustomBottomNavigationBar(
     Key bottomNavigationKey, Function setPages, int index) {
   return CurvedNavigationBar(
-    // animationCurve: Curves.easeInOutBack,
+    animationCurve: Curves.easeIn,
     buttonBackgroundColor: Colors.cyan.shade700,
     key: bottomNavigationKey,
     backgroundColor: const Color.fromARGB(255, 8, 8, 8),

@@ -1,5 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ranjitdas.kiitconnect">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
    <application
         android:label="KIIT-CONNECT"
         android:name="${applicationName}"

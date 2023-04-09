@@ -7,7 +7,6 @@ import 'package:kiitconnect_app/Getx/Logindata.dart';
 import 'package:kiitconnect_app/Model/AuthModel.dart';
 import 'package:kiitconnect_app/Model/DriveModal.dart';
 import 'package:kiitconnect_app/hive/hivedb.dart';
-import 'package:http/http.dart' as http;
 
 class LoginState extends ChangeNotifier {
   late AuthModel authModel;
@@ -35,8 +34,12 @@ class LoginState extends ChangeNotifier {
   // }
 
   Future storeToDatabase(email, profilePic, displayName) async {
-    var res = await dio.post("http://10.6.60.229:5000/api/auth/signup",
-        data: {email: email, profilePic: profilePic, displayName: displayName});
+    var res = await dio
+        .post("https://kiitconnect.herokuapp.com/api/auth/signup", data: {
+      "email": email,
+      "profilePic": profilePic,
+      "displayName": displayName
+    });
 
     print(res.data['success']);
 
@@ -56,65 +59,84 @@ class LoginState extends ChangeNotifier {
       logindata.write("isLoggedIn", true);
 
       if (res.data['newUser']) {
-        return {
-          "newUser": true,
-          "err": false,
-        };
+        return {"newUser": true, "err": false, "email": email};
       }
 
-      return {
-        "newUser": false,
-        "err": false,
-      };
+      return {"newUser": false, "err": false, "email": email};
     }
 
     return {"err": true, "newUser": false};
   }
 
+  Future checkIp() async {
+    await Future.delayed(const Duration(microseconds: 200));
+    return true;
+  }
+
   Future checkAdditionalDbExist(email) async {
-    dio.post("http://10.6.60.229:5000/api/auth/getAditionalInfo",
-        data: {email: email}).then((value) async {
-      if (value.data['success']) {
-        var d = value.data['data'];
+    try {
+      var value = await dio.post(
+          "https://kiitconnect.herokuapp.com/api/auth/getAditionalInfo",
+          data: {"email": email});
 
-        var data = {
-          "branch": d['branch'],
-          "batch": d['batch'],
-          "currentSemester": d['currentSemester'],
-          "yop": d['yop'],
-          "currentYear": d['currentYear'],
-          "social": [
-            {
-              "linkedin": d['linkedin'],
-              "github": d['github'],
-              "hackerRank": d['hackerRank'],
-              "others": d['others']
-            }
-          ]
-        };
+      print(value.data);
+      if (value.data != null) {
+        if (value.data['success']) {
+          var d = value.data['data'];
 
-        return await Hivedb().saveUserAddToBox(data);
-      } else {
-        return false;
+          var data = {
+            "branch": d['branch'],
+            "batch": d['batch'],
+            "currentSemester": d['currentSemester'],
+            "yop": d['yop'],
+            "currentYear": d['currentYear'],
+            "social": [
+              {"name": "linkedin", "linkedin": d['linkedin']},
+              {"name": "github", "github": d['github']},
+              {"name": "hackerRank", "hackerRank": d['hackerRank']},
+              {"name": "others", "others": d['others']}
+            ]
+          };
+
+          await Hivedb().saveUserAddToBox(data);
+
+          print("here");
+          isLoading = false;
+          notifyListeners();
+          return true;
+        } else {
+          isLoading = false;
+          notifyListeners();
+          print("jo");
+          return false;
+        }
       }
-    });
+
+      print("eexef");
+    } on DioError catch (e) {
+      isLoading = false;
+      notifyListeners();
+      print("jsjdd");
+      throw e.message;
+    }
   }
 
   Future storeAddionalInfoToDb(email, batch, branch, currentSemester,
       currentYear, github, hackerRank, linkedin, others, yop) async {
-    var res = await dio
-        .post("http://10.6.60.229:5000/api/auth/additionalInfo", data: {
-      email: email,
-      branch: branch,
-      batch: batch,
-      currentSemester: currentSemester,
-      currentYear: currentYear,
-      github: github,
-      hackerRank: hackerRank,
-      linkedin: linkedin,
-      others: others,
-      yop: yop
-    });
+    var res = await dio.post(
+        "https://kiitconnect.herokuapp.com/api/auth/additionalInfo",
+        data: {
+          "email": email,
+          "branch": branch,
+          "batch": batch,
+          "currentSemester": currentSemester,
+          "currentYear": currentYear,
+          "github": github,
+          "hackerRank": hackerRank,
+          "linkedin": linkedin,
+          "others": others,
+          "yop": yop
+        });
 
     if (!res.data['success']) {
       return {
@@ -135,50 +157,64 @@ class LoginState extends ChangeNotifier {
 
   Future<bool> modifyAddionalData(email, batch, branch, currentSemester,
       currentYear, github, hackerRank, linkedin, others, yop) async {
-    print({email, branch});
-    var res = http.post(Uri.parse("https://kiitconnect.herokuapp.com/test"),
-        body: {"email": email});
-
-    print(res);
-    // await dio.post("http://10.6.60.229:5000/test", data: {email: "21053"});
-
-    // var res = await dio
-    //     .post("http://10.6.60.229:5000/api/auth/UpdateAdditional", data: {
-    //   email: "21053420@kiit.ac.in",
-    //   branch: "cse",
-    //   batch: "2025",
-    //   currentSemester: "CurrentSemester",
-    //   currentYear: "2021",
-    //   github: "github",
-    //   hackerRank: "hackerrank",
-    //   linkedin: "linkedin",
-    //   others: "others",
-    //   yop: "others"
-    //   //mail: email.toString(),
-    //   // branch: branch.toString(),
-    //   // batch: batch.toString(),
-    //   // currentSemester: currentSemester.toString(),
-    //   // currentYear: currentYear.toString(),
-    //   // github: github.runtimeType,
-    //   // hackerRank: hackerRank.toString(),
-    //   // linkedin: linkedin.toString(),
-    //   // others: others.toString(),
-    //   // yop: yop.toString()
-    // });
+    isLoading = true;
+    notifyListeners();
+    // print({email, branch});
+    // var res = http.post(Uri.parse("https://kiitconnect.herokuapp.com/api/auth/UpdateAdditional"),
+    //     body: {"email": email});
 
     // print(res);
+    // await dio.post("https://kiitconnect.herokuapp.com/test", data: {email: "21053"});
 
-    // if (!res.data['success']) {
-    //   return false;
-    // } else {
-    //   return true;
-    // }
-    return false;
+    try {
+      var res = await dio.post(
+          "https://kiitconnect.herokuapp.com/api/auth/UpdateAdditional",
+          data: {
+            // "email": "21053420@kiit.ac.in",
+            // "branch": "cse",
+            // "batch": "2025",
+            // "currentSemester": "CurrentSemester",
+            // "currentYear": "2021",
+            // "github": "github",
+            // "hackerRank": "hackerrank",
+            // "linkedin": "linkedin",
+            // "others": "others",
+            // "yop": "others"
+            "email": email,
+            "branch": branch,
+            "batch": batch,
+            "currentSemester": currentSemester,
+            "currentYear": currentYear,
+            "github": github,
+            "hackerRank": hackerRank,
+            "linkedin": linkedin,
+            "others": others,
+            "yop": yop
+          });
+
+      print(res);
+
+      if (!res.data['success']) {
+        isLoading = false;
+        notifyListeners();
+        return false;
+      } else {
+        isLoading = false;
+        notifyListeners();
+        return true;
+      }
+    } on DioError catch (e) {
+      isLoading = false;
+      notifyListeners();
+      throw e.message;
+    }
+
+    // return false;
   }
 
   Future<bool> signout() async {
-    box = await Hive.openBox("UsersDetailsBox");
-    var res = await googleSignIn.signOut().then((value) => box.clear());
+    Box box2 = await Hive.openBox("UsersDetailsBox");
+    var res = await googleSignIn.signOut().then((value) => box2.clear());
     isLoggedIn = false;
     isLoading = false;
     notifyListeners();
@@ -198,7 +234,7 @@ class LoginState extends ChangeNotifier {
       message = "Use Kiit mail only";
       isLoading = false;
       notifyListeners();
-      return false;
+      return {"err": true, "message": "Login With Kiit Mail Only!!"};
     }
     isLoading = true;
     notifyListeners();

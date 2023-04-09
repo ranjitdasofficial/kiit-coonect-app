@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:kiitconnect_app/HomePage/Homepage.dart';
-import 'package:kiitconnect_app/Screens/UserProfileScreen/EditUserProfile.dart';
+import 'package:kiitconnect_app/Components/HomePage/Homepage.dart';
+import 'package:kiitconnect_app/Components/Screens/UserProfileScreen/EditUserProfile.dart';
 import 'package:kiitconnect_app/StateManager/LoginState.dart';
 import 'package:kiitconnect_app/hive/hivedb.dart';
 import 'package:provider/provider.dart';
@@ -96,19 +96,33 @@ class _LoginPageState extends State<LoginPage> {
                                   if (!res['err']) {
                                     if (!res['newUser']) {
                                       Hivedb hivedb = Hivedb();
-                                      if (await hivedb
-                                          .checkIfAdditionalInfoExist()) {
-                                        Get.offAll(() => const HomePage());
-                                      } else {
-                                        Get.offAll(() => EditUserProfile(
-                                            email: res['email']));
-                                      }
+                                      print(res['email']);
+
+                                      var po = await context
+                                          .read<LoginState>()
+                                          .checkIp();
+
+                                      print(po);
+                                      await context
+                                          .read<LoginState>()
+                                          .checkAdditionalDbExist(res['email'])
+                                          .then((value) {
+                                        if (value) {
+                                          Get.offAll(() => const HomePage());
+                                        } else {
+                                          Get.offAll(() => EditUserProfile(
+                                              email: res['email']));
+                                        }
+                                      });
+
+                                      // print("rp: ${await rp}");
                                     } else {
                                       Get.offAll(() => EditUserProfile(
                                             email: res['email'],
                                           ));
                                     }
                                   } else {
+                                    // Get.snackbar("Message", res['message']);
                                     print("Something Went Wrong");
                                   }
 

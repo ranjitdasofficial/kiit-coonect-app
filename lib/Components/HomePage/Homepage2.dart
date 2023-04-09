@@ -3,9 +3,11 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:kiitconnect_app/Components/Calculator/Calculator.dart';
 import 'package:kiitconnect_app/Components/Cardbox.dart';
-import 'package:kiitconnect_app/FileManager/Filemanager.dart';
-import 'package:kiitconnect_app/LoginPage/LoginPage.dart';
+import 'package:kiitconnect_app/Components/FileManager/Filemanager.dart';
+import 'package:kiitconnect_app/Components/LoginPage/LoginPage.dart';
+import 'package:kiitconnect_app/Components/Syllabus/Syllabus.dart';
 import 'package:kiitconnect_app/StateManager/FileManagerProvider.dart';
 import 'package:kiitconnect_app/StateManager/LoginState.dart';
 import 'package:kiitconnect_app/Themes/mythemes.dart';
@@ -20,9 +22,16 @@ class HomePage2 extends StatefulWidget {
 }
 
 class _HomePage2State extends State<HomePage2> {
-  List<String> names = ["Coding", "Academic Resources"];
+  List<String> names = [
+    "Coding",
+    "Academic Resources",
+    "Syllabus",
+    "SGPA Calculator"
+  ];
   List<String> images = [
     "assets/images/code.png",
+    "assets/images/academic.png",
+    "assets/images/academic.png",
     "assets/images/academic.png"
   ];
 
@@ -69,6 +78,22 @@ class _HomePage2State extends State<HomePage2> {
     focusNode.dispose();
   }
 
+  var fun = [
+    Syllabus(),
+    const FileManager(),
+    Syllabus(),
+    const Calculator(),
+  ];
+
+  void callfun(index) {
+    Get.to(() => fun[index],
+        fullscreenDialog: true,
+        curve: Curves.linear,
+        duration: const Duration(milliseconds: 100),
+        transition: Transition.leftToRightWithFade,
+        preventDuplicates: true);
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -101,10 +126,11 @@ class _HomePage2State extends State<HomePage2> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  "Hi Users",
+                                  "KIIT-CONNECT",
                                   style: TextStyle(
-                                      fontSize: 25,
-                                      color: globalThemes.colors2['label']),
+                                      fontSize: 20,
+                                      color: globalThemes.colors2['label'],
+                                      fontWeight: FontWeight.bold),
                                 ),
                                 const SizedBox(
                                   height: 5,
@@ -180,7 +206,7 @@ class _HomePage2State extends State<HomePage2> {
               ],
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 25),
+              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -188,11 +214,9 @@ class _HomePage2State extends State<HomePage2> {
                   Text(
                     "Explore Categories",
                     style: TextStyle(
-                        fontSize: 20, color: globalThemes.colors2['label']),
-                  ),
-                  const Text(
-                    "See all",
-                    style: TextStyle(color: Colors.blueAccent),
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.grey.shade500),
                   ),
                 ],
               ),
@@ -215,12 +239,7 @@ class _HomePage2State extends State<HomePage2> {
                       splashColor: const Color.fromARGB(255, 46, 44, 44),
                       borderRadius: BorderRadius.circular(20),
                       onTap: () {
-                        Get.to(() => const FileManager(),
-                            fullscreenDialog: true,
-                            curve: Curves.linear,
-                            duration: const Duration(milliseconds: 100),
-                            transition: Transition.leftToRightWithFade,
-                            preventDuplicates: true);
+                        callfun(index);
                       },
                       child: CardBox(
                         image: AssetImage(images[index]),

@@ -22,7 +22,7 @@ class Hivedb {
     box = await Hive.openBox("UsersDetailsBox");
     await box.delete("UserAddInfo");
     await box.put("UserAddInfo", data);
-    return true;
+    return Future.value(true);
   }
 
   Future<bool> checkIfUserExist() async {

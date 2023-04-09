@@ -1,0 +1,1310 @@
+[
+  {
+    "CSE": [
+      {
+        "1": [
+          {
+            "name": "PHYSICS",
+            "Credit": "3",
+            "SUBCODE": "PH10001"
+          },
+          {
+            "name": "MATHEMATICS-I",
+            "Credit": "4",
+            "SUBCODE": "MA11001"
+          },
+          {
+            "name": "SCIENCE OF LIVING SYSTEMS",
+            "Credit": "2",
+            "SUBCODE": "LS10001"
+          },
+          {
+            "name": "ENVIROMENTAL SCIENCE",
+            "Credit": "2",
+            "SUBCODE": "CH10003"
+          },
+          {
+            "name": "PHYSICS LAB",
+            "Credit": "1",
+            "SUBCODE": "PH19001"
+          },
+          {
+            "name": "PROGRAMMING LAB",
+            "Credit": "4",
+            "SUBCODE": "CS19001"
+          },
+          {
+            "name": "ENGINEERING DRAWING & GRAPHICS",
+            "Credit": "1",
+            "SUBCODE": "CE18001"
+          },
+          {
+            "name": "ENGINEERING ELECTIVE-I",
+            "Credit": "2",
+            "SUBCODE": null
+          },
+          {
+            "name": "SOCIAL SCIENCE ELECTIVE",
+            "Credit": "2",
+            "SUBCODE": null
+          }
+        ]
+      },
+      {
+        "2": [
+          {
+            "name": "CHEMISTRY",
+            "Credit": "3",
+            "SUBCODE": "CH10001"
+          },
+          {
+            "name": "MATHEMATICS-II",
+            "Credit": "4",
+            "SUBCODE": "MA11002"
+          },
+          {
+            "name": "ENGLISH",
+            "Credit": "2",
+            "SUBCODE": "HS10001"
+          },
+          {
+            "name": "BASIC ELECTRONICS",
+            "Credit": "2",
+            "SUBCODE": "EC10001"
+          },
+          {
+            "name": "CHEMISTRY LAB",
+            "Credit": "1",
+            "SUBCODE": "CH19001"
+          },
+          {
+            "name": "YOGA",
+            "Credit": "1",
+            "SUBCODE": "YG18001"
+          },
+          {
+            "name": "ENGINEERING LAB",
+            "Credit": "1",
+            "SUBCODE": "EX19001"
+          },
+          {
+            "name": "WORKSHOP",
+            "Credit": "1",
+            "SUBCODE": "ME18001"
+          },
+          {
+            "name": "COMMUNICATION LAB",
+            "Credit": "1",
+            "SUBCODE": "HS18001"
+          },
+          {
+            "name": "ENGINEERING ELECTIVE-I",
+            "Credit": "2",
+            "SUBCODE": null
+          },
+          {
+            "name": "SOCIAL SCIENCE ELECTIVE",
+            "Credit": "2",
+            "SUBCODE": null
+          }
+        ]
+      },{
+        "3": [
+          {
+            "name": "DSA",
+            "Credit": "4",
+            "SUBCODE": "CS2001"
+          },
+          {
+            "name": "DE",
+            "Credit": "3",
+            "SUBCODE": "EC20113"
+          },
+          {
+            "name": "HS ELECTIVE-1",
+            "Credit": "3",
+            "SUBCODE": "HS2002"
+          },
+          {
+            "name": "OOP",
+            "Credit": "3",
+            "SUBCODE": "IT2005"
+          },
+          {
+            "name": "DMS",
+            "Credit": "3",
+            "SUBCODE": "MA2013"
+          },
+          {
+            "name": "PS",
+            "Credit": "3",
+            "SUBCODE": "MA2011"
+          },
+          {
+            "name": "DSA LAB",
+            "Credit": "1",
+            "SUBCODE": "CS2091"
+          },
+          {
+            "name": "OOP LAB",
+            "Credit": "1",
+            "SUBCODE": "IT2095"
+            }
+         
+        ]
+      },{
+        "4": [
+          {
+            "name": "WT",
+            "Credit": "4",
+            "SUBCODE": "IT2004"
+          },
+          {
+            "name": "OS",
+            "Credit": "3",
+            "SUBCODE": "CS2002"
+          },
+          {
+            "name": "PDC",
+            "Credit": "4",
+            "SUBCODE": "EC3013"
+          },
+          {
+            "name": "COA",
+            "Credit": "4",
+            "SUBCODE": "CS2006"
+          },
+          {
+            "name": "AFL",
+            "Credit": "3",
+            "SUBCODE": "CS3037"
+          },
+          {
+            "name": "DBMS",
+            "Credit": "4",
+            "SUBCODE": "CS2004"
+          },
+          {
+            "name": "WT LAB",
+            "Credit": "1",
+            "SUBCODE": "IT2094"
+          },
+          {
+            "name": "OS LAB",
+            "Credit": "1",
+            "SUBCODE": "CS2092"
+          },
+          {
+            "name": "DBMS LAB",
+            "Credit": "1",
+            "SUBCODE": "CS2094"
+          },
+          {
+            "name": "BCOM LAB",
+            "Credit": "1",
+            "SUBCODE": "HS2081"
+          }
+         
+        ]
+      },{
+        "5": [
+          {
+            "name": "COMPUTER NETWORKS",
+            "Credit": "3",
+            "SUBCODE": "IT3005"
+          },
+          {
+            "name": "DESIGN & ANALYSIS OF ALGO",
+            "Credit": "3",
+            "SUBCODE": "CS2012"
+          },
+          {
+            "name": "HIGH PERFORMANCE COMPUT",
+            "Credit": "4",
+            "SUBCODE": "CS3010"
+          },
+          {
+            "name": "SOFTWARE ENGINEERING",
+            "Credit": "4",
+            "SUBCODE": "IT3003"
+          },
+          {
+            "name": "NETWORK LAB",
+            "Credit": "1",
+            "SUBCODE": "IT3095"
+          },
+          {
+            "name": "ALGORITHM LAB",
+            "Credit": "1",
+            "SUBCODE": "CS2098"
+          },
+          {
+            "name": "ELECTIVE-1",
+            "Credit": "3",
+            "SUBCODE": null
+          },
+          {
+            "name": "ELECTIVE-2",
+            "Credit": "3",
+            "SUBCODE": null
+          }
+        ]
+      },{
+        "6": [
+          {
+            "name": "COMPUTER DESIGN",
+            "Credit": "3",
+            "SUBCODE": "CS3008"
+          },
+          {
+            "name": "MATHEMATICS-II",
+            "Credit": "4",
+            "SUBCODE": "MA11002"
+          },
+          {
+            "name": "ENGLISH",
+            "Credit": "2",
+            "SUBCODE": "HS10001"
+          },
+          {
+            "name": "BASIC ELECTRONICS",
+            "Credit": "2",
+            "SUBCODE": "EC10001"
+          },
+          {
+            "name": "CHEMISTRY LAB",
+            "Credit": "1",
+            "SUBCODE": "CH19001"
+          },
+          {
+            "name": "YOGA",
+            "Credit": "1",
+            "SUBCODE": "YG18001"
+          },
+          {
+            "name": "ENGINEERING LAB",
+            "Credit": "1",
+            "SUBCODE": "EX19001"
+          },
+          {
+            "name": "WORKSHOP",
+            "Credit": "1",
+            "SUBCODE": "ME18001"
+          },
+          {
+            "name": "COMMUNICATION LAB",
+            "Credit": "1",
+            "SUBCODE": "HS18001"
+          },
+          {
+            "name": "ENGINEERING ELECTIVE-I",
+            "Credit": "2",
+            "SUBCODE": null
+          },
+          {
+            "name": "SOCIAL SCIENCE ELECTIVE",
+            "Credit": "2",
+            "SUBCODE": null
+          }
+        ]
+      },{
+        "7": [
+          {
+            "name": "SEMESESTE-7",
+            "Credit": "3",
+            "SUBCODE": "CH10001"
+          },
+          {
+            "name": "MATHEMATICS-II",
+            "Credit": "4",
+            "SUBCODE": "MA11002"
+          },
+          {
+            "name": "ENGLISH",
+            "Credit": "2",
+            "SUBCODE": "HS10001"
+          },
+          {
+            "name": "BASIC ELECTRONICS",
+            "Credit": "2",
+            "SUBCODE": "EC10001"
+          },
+          {
+            "name": "CHEMISTRY LAB",
+            "Credit": "1",
+            "SUBCODE": "CH19001"
+          },
+          {
+            "name": "YOGA",
+            "Credit": "1",
+            "SUBCODE": "YG18001"
+          },
+          {
+            "name": "ENGINEERING LAB",
+            "Credit": "1",
+            "SUBCODE": "EX19001"
+          },
+          {
+            "name": "WORKSHOP",
+            "Credit": "1",
+            "SUBCODE": "ME18001"
+          },
+          {
+            "name": "COMMUNICATION LAB",
+            "Credit": "1",
+            "SUBCODE": "HS18001"
+          },
+          {
+            "name": "ENGINEERING ELECTIVE-I",
+            "Credit": "2",
+            "SUBCODE": null
+          },
+          {
+            "name": "SOCIAL SCIENCE ELECTIVE",
+            "Credit": "2",
+            "SUBCODE": null
+          }
+        ]
+      },{
+        "8": [
+          {
+            "name": "SEMESTER-8",
+            "Credit": "3",
+            "SUBCODE": "CH10001"
+          },
+          {
+            "name": "MATHEMATICS-II",
+            "Credit": "4",
+            "SUBCODE": "MA11002"
+          },
+          {
+            "name": "ENGLISH",
+            "Credit": "2",
+            "SUBCODE": "HS10001"
+          },
+          {
+            "name": "BASIC ELECTRONICS",
+            "Credit": "2",
+            "SUBCODE": "EC10001"
+          },
+          {
+            "name": "CHEMISTRY LAB",
+            "Credit": "1",
+            "SUBCODE": "CH19001"
+          },
+          {
+            "name": "YOGA",
+            "Credit": "1",
+            "SUBCODE": "YG18001"
+          },
+          {
+            "name": "ENGINEERING LAB",
+            "Credit": "1",
+            "SUBCODE": "EX19001"
+          },
+          {
+            "name": "WORKSHOP",
+            "Credit": "1",
+            "SUBCODE": "ME18001"
+          },
+          {
+            "name": "COMMUNICATION LAB",
+            "Credit": "1",
+            "SUBCODE": "HS18001"
+          },
+          {
+            "name": "ENGINEERING ELECTIVE-I",
+            "Credit": "2",
+            "SUBCODE": null
+          },
+          {
+            "name": "SOCIAL SCIENCE ELECTIVE",
+            "Credit": "2",
+            "SUBCODE": null
+          }
+        ]
+      }
+      
+      
+      
+    ]
+  },
+  {"IT": [
+    {
+      "1": [
+        {
+          "name": "CHEMISTRY",
+          "Credit": "3",
+          "SUBCODE": "CH10001"
+        },
+        {
+          "name": "MATHEMATICS-II",
+          "Credit": "4",
+          "SUBCODE": "MA11002"
+        },
+        {
+          "name": "ENGLISH",
+          "Credit": "2",
+          "SUBCODE": "HS10001"
+        },
+        {
+          "name": "BASIC ELECTRONICS",
+          "Credit": "2",
+          "SUBCODE": "EC10001"
+        },
+        {
+          "name": "CHEMISTRY LAB",
+          "Credit": "1",
+          "SUBCODE": "CH19001"
+        },
+        {
+          "name": "YOGA",
+          "Credit": "1",
+          "SUBCODE": "YG18001"
+        },
+        {
+          "name": "ENGINEERING LAB",
+          "Credit": "1",
+          "SUBCODE": "EX19001"
+        },
+        {
+          "name": "WORKSHOP",
+          "Credit": "1",
+          "SUBCODE": "ME18001"
+        },
+        {
+          "name": "COMMUNICATION LAB",
+          "Credit": "1",
+          "SUBCODE": "HS18001"
+        },
+        {
+          "name": "ENGINEERING ELECTIVE-I",
+          "Credit": "2",
+          "SUBCODE": null
+        },
+        {
+          "name": "SOCIAL SCIENCE ELECTIVE",
+          "Credit": "2",
+          "SUBCODE": null
+        }
+      ]
+    },
+    {
+      "2": [
+        {
+          "name": "PHYSICS",
+          "Credit": "3",
+          "SUBCODE": "PH10001"
+        },
+        {
+          "name": "MATHEMATICS-I",
+          "Credit": "4",
+          "SUBCODE": "MA11001"
+        },
+        {
+          "name": "SCIENCE OF LIVING SYSTEMS",
+          "Credit": "2",
+          "SUBCODE": "LS10001"
+        },
+        {
+          "name": "ENVIROMENTAL SCIENCE",
+          "Credit": "2",
+          "SUBCODE": "CH10003"
+        },
+        {
+          "name": "PHYSICS LAB",
+          "Credit": "1",
+          "SUBCODE": "PH19001"
+        },
+        {
+          "name": "PROGRAMMING LAB",
+          "Credit": "4",
+          "SUBCODE": "CS19001"
+        },
+        {
+          "name": "ENGINEERING DRAWING & GRAPHICS",
+          "Credit": "1",
+          "SUBCODE": "CE18001"
+        },
+        {
+          "name": "ENGINEERING ELECTIVE-I",
+          "Credit": "2",
+          "SUBCODE": null
+        },
+        {
+          "name": "SOCIAL SCIENCE ELECTIVE",
+          "Credit": "2",
+          "SUBCODE": null
+        }
+      ]
+    },
+    {
+      "3": [
+        {
+          "name": "DSA",
+          "Credit": "4",
+          "SUBCODE": "CS2001"
+        },
+       
+        {
+          "name": "HS ELECTIVE-1",
+          "Credit": "3",
+          "SUBCODE": "HS2002"
+        },
+        {
+          "name": "OOP",
+          "Credit": "3",
+          "SUBCODE": "IT2005"
+        },
+        {
+          "name": "DMS",
+          "Credit": "3",
+          "SUBCODE": "MA2013"
+        },
+        {
+          "name": "PS",
+          "Credit": "3",
+          "SUBCODE": "MA2011"
+        },
+        {
+          "name": "PDC",
+          "Credit": "4",
+          "SUBCODE": "EC3013"
+          },
+        {
+          "name": "DSA LAB",
+          "Credit": "1",
+          "SUBCODE": "CS2091"
+        },
+        {
+          "name": "OOP LAB",
+          "Credit": "1",
+          "SUBCODE": "IT2095"
+          }
+       
+      ]
+    },{
+      "4": [
+        {
+          "name": "WT",
+          "Credit": "4",
+          "SUBCODE": "IT2004"
+        },
+        {
+          "name": "DEC",
+          "Credit": "3",
+          "SUBCODE": "EC20113"
+        },
+        {
+          "name": "OS",
+          "Credit": "3",
+          "SUBCODE": "CS2002"
+        },
+        
+        {
+          "name": "COA",
+          "Credit": "4",
+          "SUBCODE": "CS2006"
+        },
+        {
+          "name": "AFL",
+          "Credit": "3",
+          "SUBCODE": "CS3037"
+        },
+        {
+          "name": "DBMS",
+          "Credit": "4",
+          "SUBCODE": "CS2004"
+        },
+        {
+          "name": "WT LAB",
+          "Credit": "1",
+          "SUBCODE": "IT2094"
+        },
+        {
+          "name": "OS LAB",
+          "Credit": "1",
+          "SUBCODE": "CS2092"
+        },
+        {
+          "name": "DBMS LAB",
+          "Credit": "1",
+          "SUBCODE": "CS2094"
+        },
+        {
+          "name": "BCOM LAB",
+          "Credit": "1",
+          "SUBCODE": "HS2081"
+        }
+       
+      ]
+    },{
+      "5": [
+        {
+          "name": "COMPUTER NETWORKS",
+          "Credit": "3",
+          "SUBCODE": "IT3005"
+        },
+        {
+          "name": "DESIGN & ANALYSIS OF ALGO",
+          "Credit": "3",
+          "SUBCODE": "CS2012"
+        },
+        {
+          "name": "IOT",
+          "Credit": "3",
+          "SUBCODE": "IT3007"
+        },
+        {
+          "name": "SOFTWARE ENGINEERING",
+          "Credit": "4",
+          "SUBCODE": "IT3003"
+        },
+        {
+          "name": "NETWORK LAB",
+          "Credit": "1",
+          "SUBCODE": "IT3095"
+        },
+        {
+          "name": "ALGORITHM LAB",
+          "Credit": "1",
+          "SUBCODE": "CS2098"
+        },
+        {
+          "name": "ELECTIVE-1",
+          "Credit": "3",
+          "SUBCODE": null
+        },
+        {
+          "name": "ELECTIVE-2",
+          "Credit": "3",
+          "SUBCODE": null
+        }
+      ]
+    },{
+      "6": [
+        {
+          "name": "COMPUTER DESIGN",
+          "Credit": "3",
+          "SUBCODE": "CS3008"
+        },
+        {
+          "name": "MATHEMATICS-II",
+          "Credit": "4",
+          "SUBCODE": "MA11002"
+        },
+        {
+          "name": "ENGLISH",
+          "Credit": "2",
+          "SUBCODE": "HS10001"
+        },
+        {
+          "name": "BASIC ELECTRONICS",
+          "Credit": "2",
+          "SUBCODE": "EC10001"
+        },
+        {
+          "name": "CHEMISTRY LAB",
+          "Credit": "1",
+          "SUBCODE": "CH19001"
+        },
+        {
+          "name": "YOGA",
+          "Credit": "1",
+          "SUBCODE": "YG18001"
+        },
+        {
+          "name": "ENGINEERING LAB",
+          "Credit": "1",
+          "SUBCODE": "EX19001"
+        },
+        {
+          "name": "WORKSHOP",
+          "Credit": "1",
+          "SUBCODE": "ME18001"
+        },
+        {
+          "name": "COMMUNICATION LAB",
+          "Credit": "1",
+          "SUBCODE": "HS18001"
+        },
+        {
+          "name": "ENGINEERING ELECTIVE-I",
+          "Credit": "2",
+          "SUBCODE": null
+        },
+        {
+          "name": "SOCIAL SCIENCE ELECTIVE",
+          "Credit": "2",
+          "SUBCODE": null
+        }
+      ]
+    },{
+      "7": [
+        {
+          "name": "SEMESESTE-7",
+          "Credit": "3",
+          "SUBCODE": "CH10001"
+        },
+        {
+          "name": "MATHEMATICS-II",
+          "Credit": "4",
+          "SUBCODE": "MA11002"
+        },
+        {
+          "name": "ENGLISH",
+          "Credit": "2",
+          "SUBCODE": "HS10001"
+        },
+        {
+          "name": "BASIC ELECTRONICS",
+          "Credit": "2",
+          "SUBCODE": "EC10001"
+        },
+        {
+          "name": "CHEMISTRY LAB",
+          "Credit": "1",
+          "SUBCODE": "CH19001"
+        },
+        {
+          "name": "YOGA",
+          "Credit": "1",
+          "SUBCODE": "YG18001"
+        },
+        {
+          "name": "ENGINEERING LAB",
+          "Credit": "1",
+          "SUBCODE": "EX19001"
+        },
+        {
+          "name": "WORKSHOP",
+          "Credit": "1",
+          "SUBCODE": "ME18001"
+        },
+        {
+          "name": "COMMUNICATION LAB",
+          "Credit": "1",
+          "SUBCODE": "HS18001"
+        },
+        {
+          "name": "ENGINEERING ELECTIVE-I",
+          "Credit": "2",
+          "SUBCODE": null
+        },
+        {
+          "name": "SOCIAL SCIENCE ELECTIVE",
+          "Credit": "2",
+          "SUBCODE": null
+        }
+      ]
+    },{
+      "8": [
+        {
+          "name": "SEMESTER-8",
+          "Credit": "3",
+          "SUBCODE": "CH10001"
+        },
+        {
+          "name": "MATHEMATICS-II",
+          "Credit": "4",
+          "SUBCODE": "MA11002"
+        },
+        {
+          "name": "ENGLISH",
+          "Credit": "2",
+          "SUBCODE": "HS10001"
+        },
+        {
+          "name": "BASIC ELECTRONICS",
+          "Credit": "2",
+          "SUBCODE": "EC10001"
+        },
+        {
+          "name": "CHEMISTRY LAB",
+          "Credit": "1",
+          "SUBCODE": "CH19001"
+        },
+        {
+          "name": "YOGA",
+          "Credit": "1",
+          "SUBCODE": "YG18001"
+        },
+        {
+          "name": "ENGINEERING LAB",
+          "Credit": "1",
+          "SUBCODE": "EX19001"
+        },
+        {
+          "name": "WORKSHOP",
+          "Credit": "1",
+          "SUBCODE": "ME18001"
+        },
+        {
+          "name": "COMMUNICATION LAB",
+          "Credit": "1",
+          "SUBCODE": "HS18001"
+        },
+        {
+          "name": "ENGINEERING ELECTIVE-I",
+          "Credit": "2",
+          "SUBCODE": null
+        },
+        {
+          "name": "SOCIAL SCIENCE ELECTIVE",
+          "Credit": "2",
+          "SUBCODE": null
+        }
+      ]
+    }
+    
+    
+    
+  ]
+},
+
+
+{"CSCE": [
+  {
+    "1": [
+      {
+        "name": "CHEMISTRY",
+        "Credit": "3",
+        "SUBCODE": "CH10001"
+      },
+      {
+        "name": "MATHEMATICS-II",
+        "Credit": "4",
+        "SUBCODE": "MA11002"
+      },
+      {
+        "name": "ENGLISH",
+        "Credit": "2",
+        "SUBCODE": "HS10001"
+      },
+      {
+        "name": "BASIC ELECTRONICS",
+        "Credit": "2",
+        "SUBCODE": "EC10001"
+      },
+      {
+        "name": "CHEMISTRY LAB",
+        "Credit": "1",
+        "SUBCODE": "CH19001"
+      },
+      {
+        "name": "YOGA",
+        "Credit": "1",
+        "SUBCODE": "YG18001"
+      },
+      {
+        "name": "ENGINEERING LAB",
+        "Credit": "1",
+        "SUBCODE": "EX19001"
+      },
+      {
+        "name": "WORKSHOP",
+        "Credit": "1",
+        "SUBCODE": "ME18001"
+      },
+      {
+        "name": "COMMUNICATION LAB",
+        "Credit": "1",
+        "SUBCODE": "HS18001"
+      },
+      {
+        "name": "ENGINEERING ELECTIVE-I",
+        "Credit": "2",
+        "SUBCODE": null
+      },
+      {
+        "name": "SOCIAL SCIENCE ELECTIVE",
+        "Credit": "2",
+        "SUBCODE": null
+      }
+    ]
+  },
+  {
+    "2": [
+      {
+        "name": "PHYSICS",
+        "Credit": "3",
+        "SUBCODE": "PH10001"
+      },
+      {
+        "name": "MATHEMATICS-I",
+        "Credit": "4",
+        "SUBCODE": "MA11001"
+      },
+      {
+        "name": "SCIENCE OF LIVING SYSTEMS",
+        "Credit": "2",
+        "SUBCODE": "LS10001"
+      },
+      {
+        "name": "ENVIROMENTAL SCIENCE",
+        "Credit": "2",
+        "SUBCODE": "CH10003"
+      },
+      {
+        "name": "PHYSICS LAB",
+        "Credit": "1",
+        "SUBCODE": "PH19001"
+      },
+      {
+        "name": "PROGRAMMING LAB",
+        "Credit": "4",
+        "SUBCODE": "CS19001"
+      },
+      {
+        "name": "ENGINEERING DRAWING & GRAPHICS",
+        "Credit": "1",
+        "SUBCODE": "CE18001"
+      },
+      {
+        "name": "ENGINEERING ELECTIVE-I",
+        "Credit": "2",
+        "SUBCODE": null
+      },
+      {
+        "name": "SOCIAL SCIENCE ELECTIVE",
+        "Credit": "2",
+        "SUBCODE": null
+      }
+    ]
+  },
+  {
+    "3": [
+      {
+        "name": "DSA",
+        "Credit": "4",
+        "SUBCODE": "CS2001"
+      },
+
+
+      {
+        "name": "HS ELECTIVE-1",
+        "Credit": "3",
+        "SUBCODE": "HS2002"
+      },
+      {
+        "name": "OOP",
+        "Credit": "3",
+        "SUBCODE": "IT2005"
+      },
+      {
+        "name": "DEC",
+        "Credit": "3",
+        "SUBCODE": "EC20113"
+      },
+      {
+        "name": "PS",
+        "Credit": "3",
+        "SUBCODE": "MA2011"
+      },
+      {
+        "name": "PDC",
+        "Credit": "4",
+        "SUBCODE": "EC3013"
+        },
+      {
+        "name": "DSA LAB",
+        "Credit": "1",
+        "SUBCODE": "CS2091"
+      },
+      {
+        "name": "OOP LAB",
+        "Credit": "1",
+        "SUBCODE": "IT2095"
+        },
+        {
+          "name": "DEC LAB",
+          "Credit": "1",
+          "SUBCODE": "EC2093"
+        }
+     
+    ]
+  },{
+    "4": [
+      {
+        "name": "WT",
+        "Credit": "4",
+        "SUBCODE": "IT2004"
+      },
+      {
+        "name": "DMS",
+        "Credit": "3",
+        "SUBCODE": "MA2013"
+      },
+      {
+        "name": "OS",
+        "Credit": "3",
+        "SUBCODE": "CS2002"
+      },
+      
+      {
+        "name": "COA",
+        "Credit": "4",
+        "SUBCODE": "CS2006"
+      },
+      {
+        "name": "AFL",
+        "Credit": "3",
+        "SUBCODE": "CS3037"
+      },
+      {
+        "name": "DBMS",
+        "Credit": "4",
+        "SUBCODE": "CS2004"
+      },
+      {
+        "name": "WT LAB",
+        "Credit": "1",
+        "SUBCODE": "IT2094"
+      },
+      {
+        "name": "OS LAB",
+        "Credit": "1",
+        "SUBCODE": "CS2092"
+      },
+      {
+        "name": "CE LAB",
+        "Credit": "1",
+        "SUBCODE": null
+      },
+      {
+        "name": "BCOM LAB",
+        "Credit": "1",
+        "SUBCODE": "HS2081"
+      }
+     
+    ]
+  },{
+    "5": [
+      {
+        "name": "COMPUTER NETWORKS",
+        "Credit": "3",
+        "SUBCODE": "IT3005"
+      },
+      {
+        "name": "DESIGN & ANALYSIS OF ALGO",
+        "Credit": "3",
+        "SUBCODE": "CS2012"
+      },
+      {
+        "name": "DBMS",
+        "Credit": "4",
+        "SUBCODE": "CS2004"
+      },
+      {
+        "name": "SOFTWARE ENGINEERING",
+        "Credit": "4",
+        "SUBCODE": "IT3003"
+      },
+      {
+        "name": "NETWORK LAB",
+        "Credit": "1",
+        "SUBCODE": "IT3095"
+      },
+      {
+        "name": "ALGORITHM LAB",
+        "Credit": "1",
+        "SUBCODE": "CS2098"
+      },
+      {
+        "name": "ELECTIVE-1",
+        "Credit": "3",
+        "SUBCODE": null
+      },
+      {
+        "name": "ELECTIVE-2",
+        "Credit": "3",
+        "SUBCODE": null
+      },
+      {
+        "name": "DBMS LAB",
+        "Credit": "1",
+        "SUBCODE": "CS2094"
+      }
+      
+    ]
+  },{
+    "6": [
+      {
+        "name": "COMPUTER DESIGN",
+        "Credit": "3",
+        "SUBCODE": "CS3008"
+      },
+      {
+        "name": "MATHEMATICS-II",
+        "Credit": "4",
+        "SUBCODE": "MA11002"
+      },
+      {
+        "name": "ENGLISH",
+        "Credit": "2",
+        "SUBCODE": "HS10001"
+      },
+      {
+        "name": "BASIC ELECTRONICS",
+        "Credit": "2",
+        "SUBCODE": "EC10001"
+      },
+      {
+        "name": "CHEMISTRY LAB",
+        "Credit": "1",
+        "SUBCODE": "CH19001"
+      },
+      {
+        "name": "YOGA",
+        "Credit": "1",
+        "SUBCODE": "YG18001"
+      },
+      {
+        "name": "ENGINEERING LAB",
+        "Credit": "1",
+        "SUBCODE": "EX19001"
+      },
+      {
+        "name": "WORKSHOP",
+        "Credit": "1",
+        "SUBCODE": "ME18001"
+      },
+      {
+        "name": "COMMUNICATION LAB",
+        "Credit": "1",
+        "SUBCODE": "HS18001"
+      },
+      {
+        "name": "ENGINEERING ELECTIVE-I",
+        "Credit": "2",
+        "SUBCODE": null
+      },
+      {
+        "name": "SOCIAL SCIENCE ELECTIVE",
+        "Credit": "2",
+        "SUBCODE": null
+      }
+    ]
+  },{
+    "7": [
+      {
+        "name": "SEMESESTE-7",
+        "Credit": "3",
+        "SUBCODE": "CH10001"
+      },
+      {
+        "name": "MATHEMATICS-II",
+        "Credit": "4",
+        "SUBCODE": "MA11002"
+      },
+      {
+        "name": "ENGLISH",
+        "Credit": "2",
+        "SUBCODE": "HS10001"
+      },
+      {
+        "name": "BASIC ELECTRONICS",
+        "Credit": "2",
+        "SUBCODE": "EC10001"
+      },
+      {
+        "name": "CHEMISTRY LAB",
+        "Credit": "1",
+        "SUBCODE": "CH19001"
+      },
+      {
+        "name": "YOGA",
+        "Credit": "1",
+        "SUBCODE": "YG18001"
+      },
+      {
+        "name": "ENGINEERING LAB",
+        "Credit": "1",
+        "SUBCODE": "EX19001"
+      },
+      {
+        "name": "WORKSHOP",
+        "Credit": "1",
+        "SUBCODE": "ME18001"
+      },
+      {
+        "name": "COMMUNICATION LAB",
+        "Credit": "1",
+        "SUBCODE": "HS18001"
+      },
+      {
+        "name": "ENGINEERING ELECTIVE-I",
+        "Credit": "2",
+        "SUBCODE": null
+      },
+      {
+        "name": "SOCIAL SCIENCE ELECTIVE",
+        "Credit": "2",
+        "SUBCODE": null
+      }
+    ]
+  },{
+    "8": [
+      {
+        "name": "SEMESTER-8",
+        "Credit": "3",
+        "SUBCODE": "CH10001"
+      },
+      {
+        "name": "MATHEMATICS-II",
+        "Credit": "4",
+        "SUBCODE": "MA11002"
+      },
+      {
+        "name": "ENGLISH",
+        "Credit": "2",
+        "SUBCODE": "HS10001"
+      },
+      {
+        "name": "BASIC ELECTRONICS",
+        "Credit": "2",
+        "SUBCODE": "EC10001"
+      },
+      {
+        "name": "CHEMISTRY LAB",
+        "Credit": "1",
+        "SUBCODE": "CH19001"
+      },
+      {
+        "name": "YOGA",
+        "Credit": "1",
+        "SUBCODE": "YG18001"
+      },
+      {
+        "name": "ENGINEERING LAB",
+        "Credit": "1",
+        "SUBCODE": "EX19001"
+      },
+      {
+        "name": "WORKSHOP",
+        "Credit": "1",
+        "SUBCODE": "ME18001"
+      },
+      {
+        "name": "COMMUNICATION LAB",
+        "Credit": "1",
+        "SUBCODE": "HS18001"
+      },
+      {
+        "name": "ENGINEERING ELECTIVE-I",
+        "Credit": "2",
+        "SUBCODE": null
+      },
+      {
+        "name": "SOCIAL SCIENCE ELECTIVE",
+        "Credit": "2",
+        "SUBCODE": null
+      }
+    ]
+  }
+  
+  
+  
+]
+}
+]

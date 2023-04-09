@@ -1,6 +1,7 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:kiitconnect_app/Screens/UserProfileScreen/EditUserProfile.dart';
+import 'package:kiitconnect_app/Components/Screens/UserProfileScreen/EditUserProfile.dart';
 import 'package:kiitconnect_app/hive/hivedb.dart';
 
 class UserProfileScreen extends StatefulWidget {
@@ -12,14 +13,21 @@ class UserProfileScreen extends StatefulWidget {
 
 class _UserProfileScreenState extends State<UserProfileScreen> {
   // final Hivedb hivedb = Hivedb();
-
+  var SocialMedia = {
+    "linkedin": "assets/images/linkedin.png",
+    "github": "assets/images/github.png",
+    "hackerRank": "assets/images/instagram.png",
+    "others": "assets/images/instagram.png",
+  };
   @override
   Widget build(BuildContext context) {
     var topheight = MediaQuery.of(context).size.height / 2.9;
     var imgHeight = topheight - topheight / 5;
     return Scaffold(
       body: Container(
-          decoration: const BoxDecoration(),
+          decoration: const BoxDecoration(
+            color: Color.fromARGB(255, 22, 22, 22),
+          ),
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
           child: SingleChildScrollView(
@@ -52,8 +60,18 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
       padding: EdgeInsets.only(top: imgHeight / 3),
       child: Column(
         children: [
-          Text("${data.displayName}"),
-          Text("${data.email}"),
+          Text(
+            "${data.displayName}",
+            style: TextStyle(
+                color: Colors.grey.shade400, fontWeight: FontWeight.bold),
+          ),
+          const SizedBox(
+            height: 4,
+          ),
+          Text(
+            "${data.email}",
+            style: TextStyle(color: Colors.grey.shade400),
+          ),
           const SizedBox(
             height: 20,
           ),
@@ -72,7 +90,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
       height: MediaQuery.of(context).size.height / 2.9,
       width: MediaQuery.of(context).size.width,
       decoration: const BoxDecoration(
-          color: Colors.black38,
+          color: Color.fromARGB(255, 28, 28, 28),
           borderRadius: BorderRadius.only(
               topLeft: Radius.circular(50), topRight: Radius.circular(50))),
       child: Column(
@@ -114,10 +132,16 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
             height: 20,
           ),
           ElevatedButton(
+              style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStatePropertyAll(Colors.grey.shade800)),
               onPressed: () {
                 Get.to(() => EditUserProfile(email: data.email));
               },
-              child: const Text("Edit Profile"))
+              child: Text(
+                "Edit Profile",
+                style: TextStyle(color: Colors.grey.shade300),
+              ))
         ],
       ),
     );
@@ -127,28 +151,88 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
     return Container(
       height: 70,
       width: MediaQuery.of(context).size.width / 5,
-      decoration: const BoxDecoration(
-          color: Color.fromARGB(255, 39, 38, 38),
-          borderRadius: BorderRadius.all(Radius.circular(100))),
+      decoration: BoxDecoration(
+          color: const Color.fromARGB(255, 39, 38, 38),
+          border: Border.all(color: Colors.grey.shade700),
+          borderRadius: const BorderRadius.all(Radius.circular(100))),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [Text("$title"), Text("$subtitle")],
+        children: [
+          Text(
+            "$title",
+            style: TextStyle(
+                color: Colors.grey.shade500, fontWeight: FontWeight.bold),
+          ),
+          const SizedBox(
+            height: 3,
+          ),
+          Text(
+            "$subtitle",
+            style: TextStyle(color: Colors.grey.shade400, fontSize: 10),
+          )
+        ],
       ),
     );
   }
 
   Widget SocialBtn(data) {
-    return SizedBox(
-      width: MediaQuery.of(context).size.width - 100,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
-          SocialIcons("assets/images/instagram.png"),
-          SocialIcons("assets/images/github.png"),
-          SocialIcons("assets/images/github.png"),
-          SocialIcons("assets/images/github.png"),
-        ],
-      ),
+    return FutureBuilder(
+      future: Hivedb().getUserAddDetails(),
+      builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return const CircularProgressIndicator();
+        } else if (snapshot.connectionState == ConnectionState.done) {
+          var social = [];
+
+          // snapshot.data?.social?.map((e) => { return print("jsdjsjdjsdjsdj")});
+          // if (snapshot.hasData) {
+
+          // }
+
+          // var linkedin = snapshot.data?.social?[0]['linkedin'];
+          // var github = snapshot.data?.social?[0]['github'];
+          // var hackerRank = snapshot.data?.social?[0]['hackerrank'];
+          // var others = snapshot.data?.social?[0]['others'];
+
+          // if (linkedin.length != null && linkedin.length > 0) {
+          //   social.add({"linkedin": linkedin});
+          // }
+          // if (github.length != null && github.length > 0) {
+          //   social.add({"github": github});
+          // }
+          // // if (hackerRank.length != null && hackerRank.length > 0) {
+          // //   social.add({"hackerRank": hackerRank});
+          // // }
+          // if (others.length != null && others.length > 0) {
+          //   social.add({"others": others});
+          // }
+
+          // print(social);
+          // print({linkedin, github, hackerRank, others});
+
+          // print(soc);
+
+          return SizedBox(
+            width: MediaQuery.of(context).size.width - 100,
+            child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: snapshot.data == null
+                    ? List.empty()
+                    : snapshot.data!.social != null
+                        ? snapshot.data!.social!
+                            .where((element) =>
+                                element = (element[element['name']].length > 0))
+                            .toList()
+                            .map((e) {
+                            print(snapshot.data);
+                            return SocialIcons("${SocialMedia[e['name']]}");
+                          }).toList()
+                        : List.empty()),
+          );
+        } else {
+          return const CircularProgressIndicator();
+        }
+      },
     );
   }
 
@@ -177,10 +261,17 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
           Positioned(
             top: topheight - topheight / 5,
             child: ClipRRect(
-              borderRadius: BorderRadius.circular(100), // Image border
+              borderRadius: BorderRadius.circular(100),
               child: SizedBox.fromSize(
-                size: Size.fromRadius(topheight / 5), // Image radius
-                child: Image.network('${data.profilePic}', fit: BoxFit.cover),
+                size: Size.fromRadius(topheight / 5),
+                child: CachedNetworkImage(
+                  imageUrl: "${data.profilePic}",
+                  fit: BoxFit.cover,
+                  placeholder: (context, url) =>
+                      Container(child: const CircularProgressIndicator()),
+                  errorWidget: (context, url, error) =>
+                      Image.asset("assets/images/kiit.png"),
+                ),
               ),
             ),
           ),

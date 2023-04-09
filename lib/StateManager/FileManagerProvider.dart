@@ -1,14 +1,22 @@
+import 'dart:io';
+
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:kiitconnect_app/Model/DriveModal.dart';
+import 'package:path_provider/path_provider.dart';
 
 class FileManagerProvider extends ChangeNotifier {
   List<DriveModal> tempLoist = [];
+
   // var dt;
   List stack = [];
   String parent = "";
 
   late Box box;
+  Dio dio = Dio();
+
+  double downloadProgress = 0;
 
   onlistNavigate(index) async {
     if (stack.isEmpty) {
@@ -21,23 +29,24 @@ class FileManagerProvider extends ChangeNotifier {
       print(stack);
       // });
     } else {
-      if (tempLoist[index].type == "folder") {
-        stack.add(tempLoist[index].name);
-        String d = "$parent${tempLoist[index].name}";
-        List<DriveModal> newtempLoist = await loadJson(d);
-        // if (newtempLoist != Null) {
-        // setState(() {
-        tempLoist.clear();
-        tempLoist = newtempLoist;
-        print(stack);
-      } else {
-        print(tempLoist[index].id);
-      }
+      stack.add(tempLoist[index].name);
+      String d = "$parent${tempLoist[index].name}";
+      List<DriveModal> newtempLoist = await loadJson(d);
+      // if (newtempLoist != Null) {
+      // setState(() {
+      tempLoist.clear();
+      tempLoist = newtempLoist;
+      print(stack);
 
       // });
       // }
     }
 
+    notifyListeners();
+  }
+
+  void setDownloadProgress(progress) {
+    downloadProgress = progress;
     notifyListeners();
   }
 
@@ -133,9 +142,14 @@ class FileManagerProvider extends ChangeNotifier {
       var mimeType =
           result[i]['type'] != "folder" ? result[i]['mimeType'] : null;
       var type = result[i]['type'];
+      var size = result[i]['type'] != "folder" ? result[i]['size'] : null;
 
-      var newObj =
-          DriveModal(name: name, id: id, mimeType: mimeType, type: type);
+      var newObj = DriveModal(
+          name: name,
+          id: id,
+          mimeType: mimeType,
+          type: type,
+          size: size != null ? double.parse(size) : null);
       // print("New Object : ${newObj.name}");
 
       list.add(newObj);
@@ -168,4 +182,86 @@ class FileManagerProvider extends ChangeNotifier {
     }
     return null;
   }
+
+//Pdf viewer
+
+  Future<void> createDirectory() async {
+    Directory directory = await getApplicationDocumentsDirectory();
+    Directory imagesDirectory = Directory('${directory.path}/pdfFiles');
+    if (!await imagesDirectory.exists()) {
+      await imagesDirectory.create(recursive: true);
+    }
+  }
+
+  Future chechFileExist(File file) async {
+    if (file.existsSync()) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  Future<bool> downloadFile(String filename) async {
+    try {
+      // print(_downloadProgress);
+      // Create a new Dio instance
+
+      // Get the directory where the downloaded file will be saved
+      Directory directory = await getApplicationDocumentsDirectory();
+      File file = File('${directory.path}/pdfFiles/$filename');
+
+      return await chechFileExist(file);
+
+      // Start the download process and report the progress
+    } catch (e) {
+      print('Error downloading file: $e');
+      rethrow;
+    }
+  }
 }
+
+
+
+
+
+  // Get.defaultDialog(
+  //             title: "Downloading...",
+  //             backgroundColor: Colors.green,
+  //             titleStyle: const TextStyle(color: Colors.white),
+  //             middleTextStyle: const TextStyle(color: Colors.white),
+  //             textConfirm: "Confirm",
+  //             textCancel: "Cancel",
+  //             cancelTextColor: Colors.white,
+  //             confirmTextColor: Colors.white,
+  //             buttonColor: Colors.red,
+  //             barrierDismissible: false,
+  //             radius: 50,
+  //             content: Consumer<FileManagerProvider>(
+  //               builder: (context, value, child) {
+  //                 return Column(
+  //                   children: [
+  //                     Text("${value.downloadProgress * 100}"),
+  //                     ElevatedButton(
+  //                         onPressed: () async {
+  //                           await dio.download(
+  //                             url,
+  //                             file.path,
+  //                             onReceiveProgress: (receivedBytes, totalBytes) {
+  //                               value.setDownloadProgress(
+  //                                   receivedBytes / totalBytes);
+  //                             },
+  //                           ).then((value) {
+  //                             Get.off(() => ViewPdf(file: file));
+  //                             // Get.to(() => ViewPdf(file: file));
+
+  //                             // setState(() {
+  //                             //   count++;
+  //                             //   // _downloadProgress = 0;
+  //                             // });
+  //                           });
+  //                         },
+  //                         child: const Text("Download"))
+  //                   ],
+  //                 );
+  //               },
+  //             ));

@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:kiitconnect_app/Init/init.dart';
 import 'package:kiitconnect_app/RouteManager/RouteManager.dart';
+import 'package:kiitconnect_app/StateManager/CalculatorManager.dart';
 import 'package:kiitconnect_app/StateManager/FileManagerProvider.dart';
 import 'package:kiitconnect_app/StateManager/LoginState.dart';
 import 'package:path_provider/path_provider.dart';
@@ -25,6 +26,9 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider<LoginState>(
           create: (context) => LoginState(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => CalculatorManager(),
         ),
         ChangeNotifierProvider<FileManagerProvider>(
           create: (context) => FileManagerProvider(),

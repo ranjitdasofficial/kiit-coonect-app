@@ -1,0 +1,167 @@
+
+{"First":
+  
+[
+  {
+    "name": "AEC",
+    "type":"folder",
+    "AEC": [
+      {
+        "name": "Assignment",
+        "type":"folder",
+        "AECAssignment":[{
+          "name":"Assignment2",
+          "type":"file",
+          "data":[1,2,3]
+        },{
+          "name":"Assignment3",
+          "type":"file",
+          "data":[1,2,3]
+        },{
+          "name":"Assignment4",
+          "type":"file",
+          "data":[1,2,3]
+        },{
+          "name":"Assignment5",
+          "type":"file",
+          "data":[1,2,3]
+        },{
+          "name":"Assignment6",
+          "type":"file",
+          "data":[1,2,3]
+        }]
+      },
+      
+      {
+        "name": "BOOK",
+        "type":"folder",
+        "AECBOOK": [
+            {
+              "mimeType": "application/pdf",
+              "size": "1412209",
+              "id": "1xcFs5k6VpGfwucl6TFlTCHTcmb8X-1BP",
+              "name": "2017 sol.pdf"
+             
+            },
+            {
+              "mimeType": "application/pdf",
+              "size": "478245",
+              "id": "1gTGbFYDm9MgP_8X76ejdSvfRMGODCDbG",
+              "name": "2017.pdf"
+           
+            },
+            {
+              "mimeType": "application/pdf",
+              "size": "792326",
+              "id": "1yNT0FXbOULjNV4xQSPNqxUy3o58yDRkT",
+              "name": "2018 Sol.pdf"
+             
+            },
+            {
+              "mimeType": "application/pdf",
+              "size": "446641",
+              "id": "1SSonMUkDoWuu8fOFVyPzwyIDkPzHXV3D",
+              "name": "2019.pdf"
+              
+            },
+            {
+              "mimeType": "application/pdf",
+              "size": "2502912",
+              "id": "1HunB1Uecp8UaXOKDtNA9PZcbx6U4QAhS",
+              "name": "2019 Sol.pdf"
+            
+            },
+            {
+              "mimeType": "application/pdf",
+              "size": "367573",
+              "id": "133Eztn3dnigYXl6u2EglEWzVgWBWsT-6",
+              "name": "2018.pdf"
+             
+            },
+            {
+              "mimeType": "application/pdf",
+              "size": "2248531",
+              "id": "1bdj8FtdynqeSFJz2wW_yU_deOMVHRAMT",
+              "name": "2020 Sol.pdf"
+              
+            },
+            {
+              "mimeType": "application/pdf",
+              "size": "1160691",
+              "id": "1O0QB4nbJ69rsMw5J3KBWw4mQgT5CVR18",
+              "name": "2021 Sol.pdf"
+            
+            },
+            {
+              "mimeType": "application/pdf",
+              "size": "4775229",
+              "id": "1VWrapo5HK9G5pDGwKjXp9wjrvoHMGAjs",
+              "name": "2022 Sol.pdf"
+            
+            },
+            {
+              "mimeType": "application/pdf",
+              "size": "451892",
+              "id": "1MqsNHxiV7fgQe-rMXkiQ6Rw7IRkcIflt",
+              "name": "2020.pdf"
+         
+            }
+          ]
+      },{
+        "name": "LAB",
+        "type":"folder",
+        "AECLAB": [11.12,13,14]
+      },{
+        "name": "Theory",
+        "type":"folder",
+        "AECTheory": [15]
+      }
+    ]
+  },{
+    "name": "BEE",
+    "type":"folder",
+    "BEE": [
+      {
+        "name": "Assignment",
+        "type":"folder",
+        "BEEAssignment": [16,17,18]
+      },{
+        "name": "BOOK",
+        "type":"folder",
+        "BEEBOOK": [{
+          "name":"Beebook1",
+          "type":"file",
+          "data":[1,2,3]
+        },{
+          "name":"Beebook1",
+          "type":"file",
+          "data":[1,2,3]
+        },{
+          "name":"Beebook1",
+          "type":"file",
+          "data":[1,2,3]
+        },{
+          "name":"Beebook1",
+          "type":"file",
+          "data":[1,2,3]
+        },{
+          "name":"Beebook1",
+          "type":"file",
+          "data":[1,2,3]
+        }]
+      },{
+        "name": "LAB",
+        "type":"folder",
+        "BEELAB": [20]
+      },{
+        "name": "Theory",
+        "sub": [21],
+        "Theory":"folder"
+      }
+    ]
+  }
+  
+  
+  
+]
+}

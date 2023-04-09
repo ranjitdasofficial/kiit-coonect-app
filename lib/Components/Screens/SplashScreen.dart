@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:kiitconnect_app/HomePage/Homepage.dart';
-import 'package:kiitconnect_app/LoginPage/LoginPage.dart';
+import 'package:kiitconnect_app/Components/HomePage/Homepage.dart';
+import 'package:kiitconnect_app/Components/LoginPage/LoginPage.dart';
 import 'package:kiitconnect_app/StateManager/FileManagerProvider.dart';
 import 'package:kiitconnect_app/hive/hivedb.dart';
 import 'package:provider/provider.dart';

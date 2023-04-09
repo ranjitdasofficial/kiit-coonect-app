@@ -1,0 +1,114 @@
+[
+  {
+    "CSE": [
+      {
+        "1": [
+          {
+            "name": "CHEMISTRY",
+            "Credit": "3",
+            "SUBCODE": "CH10001"
+          },
+          {
+            "name": "MATHEMATICS-I",
+            "Credit": "4",
+            "SUBCODE": "MA11001"
+          },
+          {
+            "name": "ENGLISH",
+            "Credit": "2",
+            "SUBCODE": "HS10001"
+          },
+          {
+            "name": "BASIC ELECTRONICS",
+            "Credit": "2",
+            "SUBCODE": "EC10001"
+          },
+          {
+            "name": "CHEMISTRY LAB",
+            "Credit": "1",
+            "SUBCODE": "CH19001"
+          },
+          {
+            "name": "YOGA",
+            "Credit": "1",
+            "SUBCODE": "YG18001"
+          },
+          {
+            "name": "ENGINEERING LAB",
+            "Credit": "1",
+            "SUBCODE": "EX19001"
+          },
+          {
+            "name": "WORKSHOP",
+            "Credit": "1",
+            "SUBCODE": "ME18001"
+          },
+          {
+            "name": "COMMUNICATION LAB",
+            "Credit": "1",
+            "SUBCODE": "HS18001"
+          },
+          {
+            "name": "ENGINEERING ELECTIVE-I",
+            "Credit": "2",
+            "SUBCODE": null
+          },
+          {
+            "name": "SOCIAL SCIENCE ELECTIVE",
+            "Credit": "2",
+            "SUBCODE": null
+          }
+        ]
+      },
+      {
+        "2": [
+          {
+            "name": "PHYSICS",
+            "Credit": "3",
+            "SUBCODE": "PH10001"
+          },
+          {
+            "name": "MATHEMATICS-II",
+            "Credit": "4",
+            "SUBCODE": "MA11002"
+          },
+          {
+            "name": "SCIENCE OF LIVING SYSTEMS",
+            "Credit": "2",
+            "SUBCODE": "LS10001"
+          },
+          {
+            "name": "ENVIROMENTAL SCIENCE",
+            "Credit": "2",
+            "SUBCODE": "CH10003"
+          },
+          {
+            "name": "PHYSICS LAB",
+            "Credit": "1",
+            "SUBCODE": "PH19001"
+          },
+          {
+            "name": "PROGRAMMING LAB",
+            "Credit": "4",
+            "SUBCODE": "CS19001"
+          },
+          {
+            "name": "ENGINEERING DRAWING & GRAPHICS",
+            "Credit": "1",
+            "SUBCODE": "CE18001"
+          },
+          {
+            "name": "ENGINEERING ELECTIVE-I",
+            "Credit": "2",
+            "SUBCODE": null
+          },
+          {
+            "name": "SOCIAL SCIENCE ELECTIVE",
+            "Credit": "2",
+            "SUBCODE": null
+          }
+        ]
+      }
+    ]
+  }
+]
